@@ -1,0 +1,264 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+#task-form {
+    margin-top: 20px;
+    display: flex;
+}
+
+#task-input,
+#date-input {
+    padding: 5px;
+    margin-right: 10px;
+}
+
+#task-list {
+    margin-top: 20px;
+}
+
+.task {
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.task-name {
+    flex-grow: 1;
+}
+
+.task-date {
+    margin-left: 10px;
+    font-size: 14px;
+}
+
+.green {
+    background-color: lightgreen;
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+.red {
+    background-color: red;
+    color: white;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f5f5f5;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+#task-form {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+}
+
+#task-input,
+#date-input {
+    padding: 10px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#task-input:focus,
+#date-input:focus {
+    outline: none;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+#task-input::placeholder,
+#date-input::placeholder {
+    color: #bbb;
+}
+
+#task-input:focus::placeholder,
+#date-input:focus::placeholder {
+    color: transparent;
+}
+
+#task-input[type="date"]::-webkit-inner-spin-button,
+#date-input::-webkit-inner-spin-button {
+    display: none;
+}
+
+#task-input[type="date"]::-webkit-calendar-picker-indicator,
+#date-input::-webkit-calendar-picker-indicator {
+    color: #999;
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+#task-input[type="date"]::-webkit-datetime-edit,
+#date-input::-webkit-datetime-edit {
+    padding: 0;
+}
+
+#task-input[type="date"]::-webkit-datetime-edit-fields-wrapper,
+#date-input::-webkit-datetime-edit-fields-wrapper {
+    display: flex;
+}
+
+#task-input[type="date"]::-webkit-datetime-edit-month-field,
+#date-input::-webkit-datetime-edit-month-field,
+#task-input[type="date"]::-webkit-datetime-edit-day-field,
+#date-input::-webkit-datetime-edit-day-field,
+#task-input[type="date"]::-webkit-datetime-edit-year-field,
+#date-input::-webkit-datetime-edit-year-field {
+    margin-right: 2px;
+}
+
+#task-input[type="date"]::-webkit-datetime-edit-text,
+#date-input::-webkit-datetime-edit-text {
+    padding: 4px;
+    border-radius: 4px;
+    background-color: #fff;
+    box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#task-input[type="date"]::-webkit-clear-button,
+#date-input::-webkit-clear-button {
+    display: none;
+}
+
+#task-input[type="date"]::-webkit-inner-spin-button:hover,
+#task-input[type="date"]::-webkit-inner-spin-button:focus,
+#date-input::-webkit-inner-spin-button:hover,
+#date-input::-webkit-inner-spin-button:focus,
+#task-input[type="date"]::-webkit-calendar-picker-indicator:hover,
+#task-input[type="date"]::-webkit-calendar-picker-indicator:focus,
+#date-input::-webkit-calendar-picker-indicator:hover,
+#date-input::-webkit-calendar-picker-indicator:focus {
+    opacity: 1;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4caf50;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#task-list {
+    margin-top: 20px;
+}
+
+.task {
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.task .task-name {
+    flex: 1;
+}
+
+.task .task-date {
+    margin-right: 10px;
+}
+
+.delete-icon {
+    cursor: pointer;
+    color: #999;
+    transition: color 0.3s ease;
+}
+
+.delete-icon:hover {
+    color: #ff0000;
+}
+
+.alert-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.alert-box {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.alert-title {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.alert-message {
+    margin-bottom: 20px;
+}
+
+.alert-buttons {
+    text-align: right;
+}
+
+.alert-buttons button {
+    margin-left: 10px;
+}
+
+@media screen and (max-width: 600px) {
+    h1 {
+        font-size: 24px;
+    }
+
+    #task-form {
+        flex-direction: column;
+    }
+
+    #task-input,
+    #date-input {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+}
+
+.task-overdue {
+    background-color: #ec5252;
+}
+
+.task-close-deadline {
+    background-color: #e9e97d;
+}
+
+.task-far-deadline {
+    background-color: #37da37;
+}
